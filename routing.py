@@ -167,8 +167,8 @@ def get_minimal_cycles_in_directed_graph(arcs_used):
     def dfs(node, root, path):
         path.append(node)
         for neighbor in node_neighbors[node]:
-            if neighbor == root:
-                heappush(min_heap_cycles, (-len(path), path))
+            if neighbor == root: # cycle is identified
+                heappush(min_heap_cycles, (len(path), path))
             elif neighbor in unvisited:
                 dfs(neighbor,root, path)
                 unvisited.remove(neighbor)
