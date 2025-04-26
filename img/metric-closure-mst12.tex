@@ -1,0 +1,84 @@
+
+  \begin{tikzpicture}[scale=10, ultra thick, node_style/.style={circle,draw=blue,fill=blue!20!,scale=0.6,font=\tiny},terminal_style/.style={circle,draw=red,fill=white,scale=0.6,font=\tiny},edge_style/.style={draw=black, thick,font=\small}, selected_edge_style/.style={draw=red, ultra thick,font=\small}, selected_edge_style-2/.style={draw=purple, ultra thick,font=\small}]
+      \draw
+        (0.251, 0.046) node[node_style] (0){0}
+        (0.677, 0.043) node[node_style] (1){1}
+        (0.116, 0.604) node[node_style] (2){2}
+        (0.191, 0.669) node[node_style] (3){3}
+        (0.917, 0.419) node[node_style] (4){4}
+        (0.332, 0.283) node[node_style] (5){5}
+        (0.186, 0.317) node[node_style] (6){6}
+        (0.481, 0.07) node[node_style] (7){7}
+        (0.705, 0.315) node[node_style] (8){8}
+        (0.745, 0.398) node[node_style] (9){9}
+        (0.608, 0.728) node[node_style] (10){10}
+        (0.422, 0.394) node[node_style] (11){11};
+      \begin{scope}[-]
+        \draw[edge_style] (0) to node[near start] {44} (1);
+        \draw[edge_style] (0) to node[near start] {59} (2);
+        \draw[edge_style] (0) to node[near start] {64} (3);
+        \draw[edge_style] (0) to node[near start] {83} (4);
+        \draw[selected_edge_style] (0) to node[near start] {26} (5);
+        \draw[edge_style] (0) to node[near start] {29} (6);
+        \draw[selected_edge_style] (0) to node[near start] {24} (7);
+        \draw[edge_style] (0) to node[near start] {58} (8);
+        \draw[edge_style] (0) to node[near start] {69} (9);
+        \draw[edge_style] (0) to node[near start] {81} (10);
+        \draw[edge_style] (0) to node[near start] {41} (11);
+        \draw[edge_style] (1) to node[near start] {93} (2);
+        \draw[edge_style] (1) to node[near start] {92} (3);
+        \draw[edge_style] (1) to node[near start] {46} (4);
+        \draw[edge_style] (1) to node[near start] {48} (5);
+        \draw[edge_style] (1) to node[near start] {64} (6);
+        \draw[selected_edge_style] (1) to node[near start] {21} (7);
+        \draw[selected_edge_style] (1) to node[near start] {28} (8);
+        \draw[edge_style] (1) to node[near start] {39} (9);
+        \draw[edge_style] (1) to node[near start] {75} (10);
+        \draw[edge_style] (1) to node[near start] {55} (11);
+        \draw[selected_edge_style] (2) to node[near start] {11} (3);
+        \draw[edge_style] (2) to node[near start] {90} (4);
+        \draw[edge_style] (2) to node[near start] {47} (5);
+        \draw[selected_edge_style] (2) to node[near start] {31} (6);
+        \draw[edge_style] (2) to node[near start] {72} (7);
+        \draw[edge_style] (2) to node[near start] {68} (8);
+        \draw[edge_style] (2) to node[near start] {71} (9);
+        \draw[edge_style] (2) to node[near start] {54} (10);
+        \draw[edge_style] (2) to node[near start] {38} (11);
+        \draw[edge_style] (3) to node[near start] {88} (4);
+        \draw[edge_style] (3) to node[near start] {52} (5);
+        \draw[edge_style] (3) to node[near start] {41} (6);
+        \draw[edge_style] (3) to node[near start] {71} (7);
+        \draw[edge_style] (3) to node[near start] {67} (8);
+        \draw[edge_style] (3) to node[near start] {70} (9);
+        \draw[edge_style] (3) to node[near start] {43} (10);
+        \draw[edge_style] (3) to node[near start] {37} (11);
+        \draw[edge_style] (4) to node[near start] {67} (5);
+        \draw[edge_style] (4) to node[near start] {77} (6);
+        \draw[edge_style] (4) to node[near start] {59} (7);
+        \draw[edge_style] (4) to node[near start] {25} (8);
+        \draw[selected_edge_style] (4) to node[near start] {18} (9);
+        \draw[edge_style] (4) to node[near start] {45} (10);
+        \draw[edge_style] (4) to node[near start] {52} (11);
+        \draw[selected_edge_style] (5) to node[near start] {16} (6);
+        \draw[edge_style] (5) to node[near start] {27} (7);
+        \draw[edge_style] (5) to node[near start] {46} (8);
+        \draw[edge_style] (5) to node[near start] {49} (9);
+        \draw[edge_style] (5) to node[near start] {55} (10);
+        \draw[selected_edge_style] (5) to node[near start] {15} (11);
+        \draw[edge_style] (6) to node[near start] {43} (7);
+        \draw[edge_style] (6) to node[near start] {56} (8);
+        \draw[edge_style] (6) to node[near start] {59} (9);
+        \draw[edge_style] (6) to node[near start] {65} (10);
+        \draw[edge_style] (6) to node[near start] {26} (11);
+        \draw[edge_style] (7) to node[near start] {34} (8);
+        \draw[edge_style] (7) to node[near start] {44} (9);
+        \draw[edge_style] (7) to node[near start] {73} (10);
+        \draw[edge_style] (7) to node[near start] {34} (11);
+        \draw[selected_edge_style] (8) to node[near start] {10} (9);
+        \draw[edge_style] (8) to node[near start] {47} (10);
+        \draw[edge_style] (8) to node[near start] {30} (11);
+        \draw[selected_edge_style] (9) to node[near start] {37} (10);
+        \draw[edge_style] (9) to node[near start] {33} (11);
+        \draw[edge_style] (10) to node[near start] {39} (11);
+      \end{scope}
+    \end{tikzpicture}

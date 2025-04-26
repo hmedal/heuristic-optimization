@@ -1,0 +1,47 @@
+\begin{figure}
+  \begin{tikzpicture}[scale=10, ultra thick, node_style/.style={circle,draw=blue,fill=blue!20!,scale=0.6,font=\tiny},terminal_style/.style={circle,draw=red,fill=white,scale=0.6,font=\tiny},edge_style/.style={draw=black, thick,font=\small},selected_edge_style/.style={draw=red, thick, font=\small}]
+      \draw
+        (0.251, 0.046) node[node_style] (0){0}
+        (0.677, 0.043) node[node_style] (1){1}
+        (0.116, 0.604) node[node_style] (2){2}
+        (0.191, 0.669) node[node_style] (3){3}
+        (0.917, 0.419) node[node_style] (4){4}
+        (0.332, 0.283) node[node_style] (5){5}
+        (0.186, 0.317) node[node_style] (6){6}
+        (0.481, 0.07) node[node_style] (7){7}
+        (0.705, 0.315) node[node_style] (8){8}
+        (0.745, 0.398) node[node_style] (9){9}
+        (0.608, 0.728) node[node_style] (10){10}
+        (0.422, 0.394) node[node_style] (11){11};
+      \begin{scope}[-]
+        \draw[edge_style] (0) to node[near start] {28.861702274656224} (6);
+        \draw[edge_style] (0) to node[near start] {43.59007151464006} (1);
+        \draw[selected_edge_style] (0) to node[near start] {24.14335647075792} (7);
+        \draw[selected_edge_style] (0) to node[near start] {26.050969971000658} (5);
+        \draw[edge_style] (0) to node[near start] {63.53044722642384} (3);
+        \draw[selected_edge_style] (1) to node[near start] {28.266613688591395} (8);
+        \draw[edge_style] (1) to node[near start] {45.582689253218994} (4);
+        \draw[selected_edge_style] (1) to node[near start] {20.73743301868308} (7);
+        \draw[selected_edge_style] (2) to node[near start] {30.514195620380303} (6);
+        \draw[edge_style] (2) to node[near start] {38.05552554831652} (11);
+        \draw[selected_edge_style] (2) to node[near start] {10.864539113149768} (3);
+        \draw[edge_style] (3) to node[near start] {36.87346626839085} (11);
+        \draw[edge_style] (3) to node[near start] {43.15787920458268} (10);
+        \draw[edge_style] (4) to node[near start] {24.659873311842176} (8);
+        \draw[edge_style] (4) to node[near start] {44.762694228906035} (10);
+        \draw[selected_edge_style] (4) to node[near start] {18.338965012194947} (9);
+        \draw[selected_edge_style] (5) to node[near start] {15.99022526224207} (6);
+        \draw[edge_style] (5) to node[near start] {27.031079298223858} (7);
+        \draw[selected_edge_style] (5) to node[near start] {15.248893863271519} (11);
+        \draw[edge_style] (6) to node[near start] {25.768272372034584} (11);
+        \draw[edge_style] (7) to node[near start] {34.19553523800566} (8);
+        \draw[edge_style] (7) to node[near start] {33.97833114252566} (11);
+        \draw[edge_style] (8) to node[near start] {30.40981677616172} (11);
+        \draw[selected_edge_style] (8) to node[near start] {10.274865369003612} (9);
+        \draw[selected_edge_style] (9) to node[near start] {36.75544912874669} (10);
+        \draw[edge_style] (9) to node[near start] {33.3552952930824} (11);
+        \draw[edge_style] (10) to node[near start] {39.30052481565273} (11);
+      \end{scope}
+    \end{tikzpicture}
+  \caption{test}\label{fig:soln}
+\end{figure}

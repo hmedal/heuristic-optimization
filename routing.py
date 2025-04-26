@@ -461,6 +461,37 @@ class TSPModel():
         result['edges_used'] = [(i, j) for i, j in self.edges if m._x[i, j].x > 0.001]
         return result
     
+    def greedy_arc_heuristic(G: nx.DiGraph):
+        edges_used = []
+        #chains = []
+        #feasible_edges = [(i, j) for i, j in G.edges()]
+        sorted_edges = sorted(G.edges(data=True), key=lambda x: x[2]['weight'])
+        for e in sorted_edges:
+            u, v = e[0], e[1]
+            if u not in edges_used and v not in edges_used:
+                edges_used.append((u, v))
+        # while len(edges_used) < len(G.nodes()) - 1:
+        #     min_cost_edge = min(feasible_edges, key=lambda x: G[x[0]][x[1]]['weight'])
+        #     chains_edge_adds_to = get_chains_edge_adds_to(chains, min_cost_edge)
+        #     if len(chains_edge_adds_to) == 0:
+        #         chains.append([min_cost_edge[0], min_cost_edge[1]]) # add new chain consisting of single edge
+        #     elif len(chains_edge_adds_to) == 2:
+        #         combined_chain = combine_chains(chains_edge_adds_to[0], chains_edge_adds_to[1], min_cost_edge)
+        #         chains.remove(chains_edge_adds_to[0])
+        #         chains.remove(chains_edge_adds_to[1])
+        #         chains.append(combined_chain)
+        #     elif len(chains_edge_adds_to) == 1:
+        #         add_edge_to_chain(chains_edge_adds_to[0], min_cost_edge)
+        #     else:
+        #         raise Exception("Error")   
+        #     edges_used.append(min_cost_edge)
+        #     edges_to_remove = [(i,j) for i,j in feasible_edges if i == min_cost_edge[0] or j == min_cost_edge[1]]
+        #     feasible_edges = [edge for edge in feasible_edges 
+        #                     if edge not in edges_to_remove 
+        #                     and not edge_creates_cycle_for_chain(chains, edge)]
+        # edges_used.append((chains[0][-1], chains[0][0]))
+        return edges_used
+
     def nearest_neighbor_heuristic(self, nodes = None):
         if nodes is None:
             nodes = self.nodes
